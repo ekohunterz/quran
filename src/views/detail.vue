@@ -37,17 +37,17 @@ watch(() => route.params.id, (newValue, oldValue) => {
 <template>
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-md-4 mb-3">
-                <button class="btn btn-outline-primary fw-bold w-50" v-if="posts.surat_sebelumnya"
+            <div class="col-md-4 mb-3 col-12">
+                <button class="btn btn-outline-primary fw-bold w-100" v-if="posts.surat_sebelumnya"
                     @click="goToPreviousSurah"><i class="fa fa-arrow-left"></i> Surah
                     Sebelumnya</button>
             </div>
-            <div class="col-md-4 mb-3 d-flex justify-content-center">
-                <router-link :to="{ name: 'home' }" class="btn btn-outline-primary fw-bold w-50"><i class="fa fa-list"></i>
+            <div class="col-md-4 mb-3 col-12 d-flex justify-content-center">
+                <router-link :to="{ name: 'home' }" class="btn btn-outline-primary fw-bold w-100"><i class="fa fa-list"></i>
                     List Surah</router-link>
             </div>
-            <div class="col-md-4 mb-3 d-flex" v-if="posts.surat_selanjutnya">
-                <button class="btn btn-outline-primary fw-bold w-50 ms-auto" @click="goToNextSurah">Surah
+            <div class="col-md-4 mb-3 col-12 d-flex" v-if="posts.surat_selanjutnya">
+                <button class="btn btn-outline-primary fw-bold w-100 ms-auto" @click="goToNextSurah">Surah
                     Berikutnya <i class="fa fa-arrow-right"></i></button>
             </div>
 
